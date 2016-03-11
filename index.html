@@ -6,16 +6,18 @@
     src:url('fonts/dry.ttf');
 }
 
-
 .social i{
-	
-
    
+}
+#footer{
+	    /*margin-top: 32%;*/
 }
 .social{
 	    font-size: x-large;
-
-	color: #263440;
+		color: #263440;
+}
+#arrow:hover{
+	    cursor: -webkit-grab;
 }
 
 
@@ -36,7 +38,7 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     
 	<!-- CSS start here -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
@@ -45,32 +47,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 	<!-- Google fonts end here -->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 
 </head>
 <body class="ux">
-
-<script>
-	$(document).ready(function(){
-		$("#skill").hide();
-		$("#hire").hide();
-		$("#project").hide();
-		$("#tech").hide();
-		$("#chat").hide();
-		$("#contact").hide();
-		//for the icon
-
-		$("#nerd_pic").animate({
-			height: "20%",
-
-		},2500);
-
-	});
-
-
-
-</script>  
-
 
   <div class="bg-overlay"></div>
 	<!-- Preloader start here -->
@@ -104,7 +86,7 @@
 		
 			<div class="row tworow">
 				<div class="col-sm-2 wow fadeInDown text-center">
-				 <a id="skill_icon" href="https://www.facebook.com/abrar1661"><img  class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image"></a> 
+				 <a id="skill_icon" href="#"><img  class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image"></a> 
 				<h3 id="skill">Skills</h3>
 				</div>
 
@@ -135,11 +117,37 @@
 				  
 				</div>
 				
+				
 		</div>
-		
+		<br>
+		<br>
+		<!-- <div  class="container">
+				<span  id="#arrow" class="fa fa-chevron-circle-up" style="float: right;" onclick="foo()"></span>
+		</div> -->
 
-		<script>
-		//skill
+</div>
+
+<div id="infoBox"></div>
+
+
+<!-- Jquery stuffs -->
+<script>
+	$(document).ready(function(){
+		$("#skill").hide();
+		$("#hire").hide();
+		$("#project").hide();
+		$("#tech").hide();
+		$("#chat").hide();
+		$("#contact").hide();
+		$(".fa-chevron-circle-up").hide();
+		//for the icon
+
+		$("#nerd_pic").animate({
+			height: "20%",
+		},2500);
+
+	});
+			//icon hover effects
 					$("#skill_icon").hover(function(){
 						$("#skill").show("slow");
 					},function(){
@@ -180,19 +188,63 @@
 					}
 					);	
 
-		</script>
 		
-		<br>
-		<br>
-</div>
+		
+			//click on skill icon
+			$("#skill_icon").click(function(){
+				$("#nerd").animate({
+					marginTop: "-12%"
+				},1000);
+
+				$.ajax({url:"pages/skills.html",success:function(result){     //ajax call
+                	$("#infoBox").html(result);                         //show result
+         		}});
+			});
+
+
+			//click on project icon
+			$("#project_icon").click(function(){
+				$("#nerd").animate({
+					marginTop: "-12%"
+				},1000);
+			});
+
+			//click on tech icon
+			$("#tech_icon").click(function(){
+				$("#nerd").animate({
+					marginTop: "-12%"
+				},1000);
+			});
+
+			//click on hire icon
+			$("#hire_icon").click(function(){
+				$("#nerd").animate({
+					marginTop: "-12%"
+				},1000);
+			});
+
+			//click on hire icon
+			$("#contact_icon").click(function(){
+				$("#nerd").animate({
+					marginTop: "-12%"
+				},1000);
+			});
+
+			//click on hire icon
+			$("#chat_icon").click(function(){
+				$("#nerd").animate({
+					marginTop: "-12%"
+				},1000);
+			});
+
+
+
+
+</script>  
 
 <!-- Javascript framework and plugins end here -->
-
-
 </body>
 </html>
-
-		<script type="text/javascript" src="js/bootstrap.min.js"></script> 	
 		<script src="js/jquery.knob.js"></script>
 		<script src="js/init.js"></script>
 		<script src="js/general.js"></script>
