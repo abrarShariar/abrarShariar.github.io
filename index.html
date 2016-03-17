@@ -48,12 +48,15 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 <!-- Google fonts end here -->
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+-->
 
 </head>
 <body class="ux">
-
 
 	<div class="bg-overlay"></div>
 	<!-- Preloader start here -->
@@ -73,8 +76,6 @@
 				<h2 style="">Abrar Shariar</h2>
 				<h4 id="sub_head">Web technology enthusiast | Just another computer nerd</h4> 
 				<br>
-
-
 			</section>
 			<div class="row tworow">
 				<div class="col-md-12 wow fadeInDown text-center" style="margin-top: -3%;margin-bottom: 3%;">
@@ -85,40 +86,37 @@
 			
 			<!-- for circular icons -->
 
-			<div class="row tworow">
+			<div class="row tworow" id="menuList">
 				<div class="col-sm-2 wow fadeInDown text-center">
-					<a id="skill_icon" href="#"><img  class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image"></a> 
-					<h3 id="skill">Skills</h3>
+					<a id="skill_icon" href="#" class="tapHover" value="skill"><img class="rotate"  src="img/icon/laptop.svg" alt="skill"></a> 
+					<h3 id="skill" class="menuLabel">Skills</h3>
 				</div>
 
 				<div class="col-sm-2 wow fadeInDown text-center">
-					<a id="project_icon" href="#"><img class="rotate" src="img/icon/medal.svg" alt="Generic placeholder image"></a>
-					<h3 id="project">Projects</h3>
+					<a id="project_icon" href="#"><img class="rotate" src="img/icon/medal.svg" alt="project"></a>
+					<h3 id="project" class="menuLabel">Work</h3>
 				</div>
 
 				
 				<div class="col-sm-2 wow fadeInDown text-center">
-					<a id="tech_icon" href="#"><img class="rotate" src="img/icon/headphones.svg" alt="Generic placeholder image"></a>
-					<h3 id="tech">Things I &nbsp<i class="fa fa-heart"></i></h3>
+					<a id="tech_icon" href="#"><img class="rotate" src="img/icon/headphones.svg" alt="tech"></a>
+					<h3 id="tech" class="menuLabel">Things I &nbsp<i class="fa fa-heart"></i></h3>
 				</div>
 
 				<div class="col-sm-2 wow fadeInDown text-center">
-					<a id="hire_icon" href="#"><img class="rotate" src="img/icon/speed.svg" alt="Generic placeholder image"></a>
-					<h3 id="hire">Hire me !!</h3>
+					<a id="hire_icon" href="#"><img class="rotate" src="img/icon/speed.svg" alt="hire"></a>
+					<h3 id="hire" class="menuLabel">Hire me !!</h3>
 				</div>
 
 				<div class="col-sm-2 wow fadeInDown text-center">
-					<a id="chat_icon" href="#"><img class="rotate" src="img/icon/chat.svg" alt="Generic placeholder image"></a>
-					<h3 id="chat">Lets chat</h3>
+					<a id="chat_icon" href="#"><img class="rotate" src="img/icon/chat.svg" alt="chat"></a>
+					<h3 id="chat" class="menuLabel">Lets chat</h3>
 				</div>
 
 				<div class="col-sm-2 wow fadeInDown text-center">
-					<a id="contact_icon" href="#"><img class="rotate" src="img/icon/map.svg" alt="Generic placeholder image"></a>
-					<h3 id="contact">Contact me</h3>
-
+					<a id="contact_icon" href="#"><img class="rotate" src="img/icon/map.svg" alt="contact"></a>
+					<h3 id="contact" class="menuLabel">Contact me</h3>
 				</div>
-				
-				
 			</div>
 			<br>
 			<br>
@@ -137,156 +135,17 @@
 			</div>
 		</div>
 
+		<!-- events too trigger for touch devices -->
+		<script type="text/javascript">
 
-		<!-- Jquery stuffs -->
-		<script>
-		$(document).ready(function(){
-			$("#skill").hide();
-			$("#hire").hide();
-			$("#project").hide();
-			$("#tech").hide();
-			$("#chat").hide();
-			$("#contact").hide();
-			$(".fa-chevron-circle-up").hide();
-			$("#zombie").hide();
-			$("#coming_soon").hide();
-		//for the icon
+		</script>
 
-		$("#nerd_pic").animate({
-			height: "20%",
-		},2500);
-
-	});
-			//icon hover effects
-			$("#skill_icon").hover(function(){
-				$("#skill").show("slow");
-			},function(){
-				$("#skill").hide("slow");
-			}
-			);	
-
-			$("#hire_icon").hover(function(){
-				$("#hire").show("slow");
-			},function(){
-				$("#hire").hide("slow");
-			}
-			);	
-			$("#project_icon").hover(function(){
-				$("#project").show("slow");
-			},function(){
-				$("#project").hide("slow");
-			}
-			);
-
-			$("#tech_icon").hover(function(){
-				$("#tech").show("slow");
-			},function(){
-				$("#tech").hide("slow");
-			}
-			);	
-
-			$("#chat_icon").hover(function(){
-				$("#chat").show("slow");
-			},function(){
-				$("#chat").hide("slow");
-			}
-			);	
-			$("#contact_icon").hover(function(){
-				$("#contact").show("slow");
-			},function(){
-				$("#contact").hide("slow");
-			}
-			);	
-
-
-
-			//click on skill icon
-			$("#skill_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-
-				$.ajax({url:"pages/skills.html",success:function(result){     //ajax call
-                	$("#infoBox").html(result);                         //show result
-                }});
-			});
-
-
-			//click on project icon
-			$("#project_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-				$("#zombie").show("slow");
-				$("#zombie").animate({
-					marginLeft: "38%"
-				},7000);
-				$("#coming_soon").show("slow");
-			});
-
-			//click on tech icon
-			$("#tech_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-
-				$("#zombie").show("slow");
-				$("#zombie").animate({
-					marginLeft: "38%"
-				},7000);
-				$("#coming_soon").show("slow");
-			});
-
-			//click on hire icon
-			$("#hire_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-
-				$("#zombie").show("slow");
-				$("#zombie").animate({
-					marginLeft: "38%"
-				},7000);
-				$("#coming_soon").show("slow");
-			});
-
-			//click on hire icon
-			$("#contact_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-
-				$("#zombie").show("slow");
-				$("#zombie").animate({
-					marginLeft: "38%"
-				},7000);
-				$("#coming_soon").show("slow");
-			});
-
-			//click on hire icon
-			$("#chat_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-
-				$("#zombie").show("slow");
-				$("#zombie").animate({
-					marginLeft: "38%"
-				},7000);
-				$("#coming_soon").show("slow");
-			});
-
-
-
-
-			</script>  
-
-			<!-- Javascript framework and plugins end here -->
-		</body>
-		</html>
-		<script src="js/jquery.knob.js"></script>
-		<script src="js/init.js"></script>
-		<script src="js/general.js"></script>
-		<script src="js/jquery.ccountdown.js"></script>
+	</body>
+	</html>
+	<script src="js/jquery.knob.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/general.js"></script>
+	<script src="js/jquery.ccountdown.js"></script>
+	<script src="me.js"></script>
 
 
