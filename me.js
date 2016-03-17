@@ -58,8 +58,6 @@ $(document).ready(function(){
 			}
 			);	
 
-
-
 			//click on skill icon
 			$("#skill_icon").click(function(){
 				$("#nerd").animate({
@@ -136,11 +134,8 @@ $(document).ready(function(){
 				$("#coming_soon").show("slow");
 			});
 
-
-
 			// events for mobile touch devices
 			//source: http://jsfiddle.net/c_kick/s9rB4/
-
 
 			$('.rotate').on("touchstart",function(e){
 				'use strict';
