@@ -1,17 +1,14 @@
-		
-
-$(document).ready(function(){
-	$("#skill").hide();
-	$("#hire").hide();
-	$("#project").hide();
-	$("#tech").hide();
-	$("#chat").hide();
-	$("#contact").hide();
-	$(".fa-chevron-circle-up").hide();
-	$("#zombie").hide();
-	$("#coming_soon").hide();
+		$(document).ready(function(){
+			$("#skill").hide();
+			$("#hire").hide();
+			$("#project").hide();
+			$("#tech").hide();
+			$("#chat").hide();
+			$("#contact").hide();
+			$(".fa-chevron-circle-up").hide();
+			$("#zombie").hide();
+			$("#coming_soon").hide();
 		//for the icon
-
 		$("#nerd_pic").animate({
 			height: "20%",
 		},2500);
@@ -68,8 +65,6 @@ $(document).ready(function(){
                 	$("#infoBox").html(result);                         //show result
                 }});
 			});
-
-
 			//click on project icon
 			$("#project_icon").click(function(){
 				$("#nerd").animate({
@@ -81,7 +76,6 @@ $(document).ready(function(){
 				},7000);
 				$("#coming_soon").show("slow");
 			});
-
 			//click on tech icon
 			$("#tech_icon").click(function(){
 				$("#nerd").animate({
@@ -94,7 +88,6 @@ $(document).ready(function(){
 				},7000);
 				$("#coming_soon").show("slow");
 			});
-
 			//click on hire icon
 			$("#hire_icon").click(function(){
 				$("#nerd").animate({
@@ -107,7 +100,6 @@ $(document).ready(function(){
 				},7000);
 				$("#coming_soon").show("slow");
 			});
-
 			//click on hire icon
 			$("#contact_icon").click(function(){
 				$("#nerd").animate({
@@ -120,7 +112,6 @@ $(document).ready(function(){
 				},7000);
 				$("#coming_soon").show("slow");
 			});
-
 			//click on hire icon
 			$("#chat_icon").click(function(){
 				$("#nerd").animate({
@@ -133,10 +124,8 @@ $(document).ready(function(){
 				},7000);
 				$("#coming_soon").show("slow");
 			});
-
 			// events for mobile touch devices
 			//source: http://jsfiddle.net/c_kick/s9rB4/
-
 			$('.rotate').on("touchstart",function(e){
 				'use strict';
 				//hide all
@@ -154,6 +143,3 @@ $(document).ready(function(){
 					return false;
 				}
 			});
-
-
-
