@@ -9,10 +9,7 @@
 			$("#zombie").hide();
 			$("#coming_soon").hide();
 		//for the icon
-		$("#nerd_pic").animate({
-			height: "20%",
-		},2500);
-
+		
 	});
 			//icon hover effects 
 			$("#skill_icon").hover(function(){
