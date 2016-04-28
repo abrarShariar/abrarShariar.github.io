@@ -9,22 +9,22 @@
 			$("#zombie").hide();
 			$("#coming_soon").hide();
 		//for the icon
-		
+
 	});
-			//icon hover effects 
+			//icon hover effects
 			$("#skill_icon").hover(function(){
 				$("#skill").show("slow");
 			},function(){
 				$("#skill").hide("slow");
 			}
-			);	
+			);
 
 			$("#hire_icon").hover(function(){
 				$("#hire").show("slow");
 			},function(){
 				$("#hire").hide("slow");
 			}
-			);	
+			);
 			$("#project_icon").hover(function(){
 				$("#project").show("slow");
 			},function(){
@@ -37,20 +37,20 @@
 			},function(){
 				$("#tech").hide("slow");
 			}
-			);	
+			);
 
 			$("#chat_icon").hover(function(){
 				$("#chat").show("slow");
 			},function(){
 				$("#chat").hide("slow");
 			}
-			);	
+			);
 			$("#contact_icon").hover(function(){
 				$("#contact").show("slow");
 			},function(){
 				$("#contact").hide("slow");
 			}
-			);	
+			);
 
 			//click on skill icon
 			$("#skill_icon").click(function(){
@@ -110,24 +110,24 @@
 				$("#coming_soon").show("slow");
 			});
 			//click on hire icon
-			$("#chat_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-
-				$("#zombie").show("slow");
-				$("#zombie").animate({
-					marginLeft: "38%"
-				},7000);
-				$("#coming_soon").show("slow");
-			});
+			// $("#chat_icon").click(function(){
+			// 	$("#nerd").animate({
+			// 		marginTop: "-12%"
+			// 	},1000);
+			//
+			// 	$("#zombie").show("slow");
+			// 	$("#zombie").animate({
+			// 		marginLeft: "38%"
+			// 	},7000);
+			// 	$("#coming_soon").show("slow");
+			// });
 			// events for mobile touch devices
 			//source: http://jsfiddle.net/c_kick/s9rB4/
 			$('.rotate').on("touchstart",function(e){
 				'use strict';
 				//hide all
 				$("h3").hide();
-				var img=$(this);	
+				var img=$(this);
 				var id=img.context.alt;
 				if(img.hasClass('hover')){
 					return true;
