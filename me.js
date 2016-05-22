@@ -9,7 +9,6 @@
 			$("#zombie").hide();
 			$("#coming_soon").hide();
 		//for the icon
-
 	});
 			//icon hover effects
 			$("#skill_icon").hover(function(){
@@ -65,7 +64,7 @@
 			$("#project_icon").click(function(){
 					$.ajax({url:"pages/work.html",success:function(result){
 						$("#infoBox").html(result);
-						window.scrollBy(0,350); 
+						window.scrollBy(0,350);
 					}});
 			});
 			//click on tech icon
