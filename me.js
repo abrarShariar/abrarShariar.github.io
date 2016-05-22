@@ -54,14 +54,18 @@
 
 			//click on skill icon
 			$("#skill_icon").click(function(){
+
 				$.ajax({url:"pages/skills.html",success:function(result){     //ajax call
-                	$("#infoBox").html(result);                         //show result
+                	$("#infoBox").html(result);
+									window.scrollBy(0,500);                      //show result
                 }});
+
 			});
 			//click on project icon
 			$("#project_icon").click(function(){
 					$.ajax({url:"pages/work.html",success:function(result){
 						$("#infoBox").html(result);
+						window.scrollBy(0,350); 
 					}});
 			});
 			//click on tech icon
