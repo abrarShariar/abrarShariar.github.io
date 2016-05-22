@@ -54,24 +54,15 @@
 
 			//click on skill icon
 			$("#skill_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-
 				$.ajax({url:"pages/skills.html",success:function(result){     //ajax call
                 	$("#infoBox").html(result);                         //show result
                 }});
 			});
 			//click on project icon
 			$("#project_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-				$("#zombie").show("slow");
-				$("#zombie").animate({
-					marginLeft: "38%"
-				},7000);
-				$("#coming_soon").show("slow");
+					$.ajax({url:"pages/work.html",success:function(result){
+						$("#infoBox").html(result);
+					}});
 			});
 			//click on tech icon
 			$("#tech_icon").click(function(){
