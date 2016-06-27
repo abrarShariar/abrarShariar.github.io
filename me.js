@@ -67,6 +67,15 @@
 						window.scrollBy(0,350);
 					}});
 			});
+
+			//click on edu icon
+			$("#hire_icon").click(function(){
+					$.ajax({url:"pages/education.html",success:function(result){
+						$("#infoBox").html(result);
+						window.scrollBy(0,350);
+					}});
+			});
+
 			//click on tech icon
 			$("#tech_icon").click(function(){
 				$("#nerd").animate({
