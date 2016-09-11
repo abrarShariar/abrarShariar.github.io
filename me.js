@@ -80,14 +80,7 @@
 
 			//click on hire icon
 			$("#contact_icon").click(function(){
-				$("#nerd").animate({
-					marginTop: "-12%"
-				},1000);
-
-				$("#zombie").show("slow");
-				$("#zombie").animate({
-					marginLeft: "38%"
-				},7000);
+			
 				$("#coming_soon").show("slow");
 			});
 			//click on hire icon
