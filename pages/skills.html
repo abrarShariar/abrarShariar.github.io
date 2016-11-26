@@ -24,7 +24,30 @@
 	<br>
 	<h3 style="color: rgb(133, 139, 139);">Languages</h3>
 	<br>
-	<!-- !!!! TEST AND TRAIL -->
+
+	<div class="row">
+		<div class="col-sm-2">
+			<div><span class="label label-warning" style="background-color: #617CBE;">PHP</span></div>
+		</div>
+		<div class="col-sm-8">
+			<div class="progress">
+				<div id="php_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:#617CBE;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2">
+			<div><span class="label label-warning" style="background-color:rgba(241, 190, 33, 0.93);">JavaScript</span></div>
+		</div>
+		<div class="col-sm-8">
+			<div class="progress">
+				<div id="js_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:rgba(241, 190, 33, 0.8);">
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="row">
 		<div class="col-sm-2">
 			<div><span class="label label-warning" style="background-color: rgba(228, 77, 38, 0.64)">HTML5</span></div>
@@ -49,17 +72,7 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color:rgba(241, 190, 33, 0.93);">JavaScript</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="js_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:rgba(241, 190, 33, 0.8);">
-				</div>
-			</div>
-		</div>
-	</div>
+
 
 
 	<div class="row">
@@ -74,17 +87,7 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: #617CBE;">PHP</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="php_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:#617CBE;">
-				</div>
-			</div>
-		</div>
-	</div>
+
 
 	<div class="row">
 		<div class="col-sm-2">
@@ -100,6 +103,18 @@
 
 	<h3 style="color: rgb(133, 139, 139)">Libraries/Frameworks</h3>
 	<br>
+
+	<div class="row">
+		<div class="col-sm-2">
+			<div><span class="label label-warning" style="background-color: rgba(228, 77, 38, 0.639216);">Laravel</span></div>
+		</div>
+		<div class="col-sm-8">
+			<div class="progress">
+				<div id="lara_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(228, 77, 38, 0.639216);">
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="row">
 		<div class="col-sm-2">
@@ -191,15 +206,15 @@
 
 $(document).ready(function(){
 	$("#html_progress").animate({
-		width:"80%",
+		width:"70%",
 	},"fast");
 
 	$("#css_progress").animate({
-		width:"60%",
+		width:"70%",
 	},"fast");
 
 	$("#js_progress").animate({
-		width:"85%",
+		width:"80%",
 	},"fast");
 
 	$("#jquery_progress").animate({
@@ -207,7 +222,7 @@ $(document).ready(function(){
 	},"fast");
 
 	$("#php_progress").animate({
-		width:"70%",
+		width:"80%",
 	},"fast");
 
 	$("#cpp_progress").animate({
@@ -226,6 +241,10 @@ $(document).ready(function(){
 
 	$("#typescript_progress").animate({
 		width:"50%",
+	},"fast");
+
+	$("#lara_progress").animate({
+		width:"80%",
 	},"fast");
 
 	$("#ng_progress").animate({
