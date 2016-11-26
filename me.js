@@ -11,45 +11,45 @@
 		//for the icon
 	});
 			//icon hover effects
-			$("#skill_icon").hover(function(){
-				$("#skill").show("slow");
-			},function(){
-				$("#skill").hide("slow");
-			}
-			);
+			// $("#skill_icon").hover(function(){
+			// 	$("#skill").show("slow");
+			// },function(){
+			// 	$("#skill").hide("slow");
+			// }
+			// );
 
-			$("#hire_icon").hover(function(){
-				$("#hire").show("slow");
-			},function(){
-				$("#hire").hide("slow");
-			}
-			);
-			$("#project_icon").hover(function(){
-				$("#project").show("slow");
-			},function(){
-				$("#project").hide("slow");
-			}
-			);
-
-			$("#tech_icon").hover(function(){
-				$("#tech").show("slow");
-			},function(){
-				$("#tech").hide("slow");
-			}
-			);
-
-			$("#chat_icon").hover(function(){
-				$("#chat").show("slow");
-			},function(){
-				$("#chat").hide("slow");
-			}
-			);
-			$("#contact_icon").hover(function(){
-				$("#contact").show("slow");
-			},function(){
-				$("#contact").hide("slow");
-			}
-			);
+			// $("#hire_icon").hover(function(){
+			// 	$("#hire").show("slow");
+			// },function(){
+			// 	$("#hire").hide("slow");
+			// }
+			// );
+			// $("#project_icon").hover(function(){
+			// 	$("#project").show("slow");
+			// },function(){
+			// 	$("#project").hide("slow");
+			// }
+			// );
+			//
+			// $("#tech_icon").hover(function(){
+			// 	$("#tech").show("slow");
+			// },function(){
+			// 	$("#tech").hide("slow");
+			// }
+			// );
+			//
+			// $("#chat_icon").hover(function(){
+			// 	$("#chat").show("slow");
+			// },function(){
+			// 	$("#chat").hide("slow");
+			// }
+			// );
+			// $("#contact_icon").hover(function(){
+			// 	$("#contact").show("slow");
+			// },function(){
+			// 	$("#contact").hide("slow");
+			// }
+			// );
 
 			//click on skill icon
 			$("#skill_icon").click(function(){
@@ -80,7 +80,7 @@
 
 			//click on hire icon
 			$("#contact_icon").click(function(){
-			
+
 				$("#coming_soon").show("slow");
 			});
 			//click on hire icon
