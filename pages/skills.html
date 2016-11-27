@@ -1,17 +1,18 @@
-
-
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
 
 <style type="text/css">
-.progress{
-	/*height:4%;*/
-}
-.label{
-	font-size: small
-}
+	.progress {
+		/*height:4%;*/
+	}
+
+	#skill_label{
+			float:right;
+			font-size: small;
+	}
+
 </style>
 
 
@@ -19,247 +20,311 @@
 
 <h2 style="text-align:center">On a scale of Noob to  Ninja {<em><small>wannabe</small></em>} </h2>
 <br>
-<div class="col-md-3"></div>
-<div class="col-md-8" id="skills_box">
-	<br>
-	<h3 style="color: rgb(133, 139, 139);">Languages</h3>
-	<br>
 
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: #617CBE;">PHP</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="php_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:#617CBE;">
+<div class="col-md-12">
+		<h3 style="color: rgb(133, 139, 139);">Professional Expertise</h3>
+		<br>
+		<div class="row">
+			<div class="col-md-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: black;">Web Development</span></div>
+			</div>
+			<div class="col-md-10">
+				<div class="progress">
+					<div id="web_dev_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9; background-color: black;">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color:rgba(241, 190, 33, 0.93);">JavaScript</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="js_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:rgba(241, 190, 33, 0.8);">
+
+		<div class="row">
+			<div class="col-md-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: black;">Database Design</span></div>
+			</div>
+			<div class="col-md-10">
+				<div class="progress">
+					<div id="database_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9; background-color: black;">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: rgba(228, 77, 38, 0.64)">HTML5</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="html_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(228, 77, 38, 0.64)">
+		<div class="row">
+			<div class="col-md-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: black;">UX / UI Design</span></div>
+			</div>
+			<div class="col-md-10">
+				<div class="progress">
+					<div id="ux_ui_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9; background-color: black;">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color:#30A9DC;">CSS3</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="css_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;    background-color: rgb(48, 169, 220);">
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: rgb(64, 107, 160);">TypeScript</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="typescript_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9; background-color: rgb(64, 107, 160);">
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: #AC2C2C;">C++</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="cpp_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:rgba(172, 44, 44, 0.81);">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<h3 style="color: rgb(133, 139, 139)">Libraries/Frameworks</h3>
-	<br>
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: rgba(228, 77, 38, 0.639216);">Laravel</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="lara_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(228, 77, 38, 0.639216);">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: #F44336;">Angular 2</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="ng_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: #F44336;">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: rgb(9, 121, 218);">Ionic</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="ionic_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgb(9, 121, 218);">
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: rgb(64, 107, 160);">JQUERY</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="jquery_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color: rgb(64, 107, 160);">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: rgba(90, 12, 148, 0.78);">Bootstrap</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="boot_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(90, 12, 148, 0.78);">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: rgba(90, 12, 148, 0.78);">Material Lite</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="mdl_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(90, 12, 148, 0.78);">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: rgba(255, 87, 34, 0.82);">CodeIgniter</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="ci_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(255, 87, 34, 0.82);">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-2">
-			<div><span class="label label-warning" style="background-color: #8BC34A;">Qt</span></div>
-		</div>
-		<div class="col-sm-8">
-			<div class="progress">
-				<div id="qt_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: #8BC34A;">
-				</div>
-			</div>
-		</div>
-	</div>
 </div>
 
+
+<div class="col-md-12" id="skills_box">
+	<div class="col-md-6">
+		<br>
+		<h3 style="color: rgb(133, 139, 139);">Languages</h3>
+		<br>
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: #617CBE;">PHP</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="php_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:#617CBE;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color:rgba(241, 190, 33, 0.93);">JavaScript</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="js_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:rgba(241, 190, 33, 0.8);">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: rgba(228, 77, 38, 0.64)">HTML5</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="html_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(228, 77, 38, 0.64)">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color:#30A9DC;">CSS3</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="css_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;    background-color: rgb(48, 169, 220);">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color:rgba(241, 190, 33, 0.93);">SQL</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="sql_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:rgba(241, 190, 33, 0.8);">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: rgb(64, 107, 160);">TypeScript</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="typescript_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9; background-color: rgb(64, 107, 160);">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: #AC2C2C;">C/C++</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="cpp_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color:rgba(172, 44, 44, 0.81);">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<br>
+		<h3 style="color: rgb(133, 139, 139)">Libraries/Frameworks</h3>
+		<br>
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: rgba(228, 77, 38, 0.639216);">Laravel</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="lara_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(228, 77, 38, 0.639216);">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: rgba(255, 87, 34, 0.82);">CodeIgniter</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="ci_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(255, 87, 34, 0.82);">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: #F44336;">Angular 2</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="ng_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: #F44336;">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: rgb(64, 107, 160);">JQUERY</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="jquery_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;  background-color: rgb(64, 107, 160);">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: rgba(90, 12, 148, 0.78);">Bootstrap</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="boot_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgba(90, 12, 148, 0.78);">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: rgb(9, 121, 218);">Ionic</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="ionic_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: rgb(9, 121, 218);">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div><span id="skill_label" class="label label-warning" style="background-color: #8BC34A;">Qt</span></div>
+			</div>
+			<div class="col-sm-8">
+				<div class="progress">
+					<div id="qt_progress" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%;opacity:0.9;background-color: #8BC34A;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+
+
+
+
+
+
+
 <script>
+	$(document).ready(function() {
+		$("#html_progress").animate({
+			width: "70%",
+		}, "fast");
 
-$(document).ready(function(){
-	$("#html_progress").animate({
-		width:"70%",
-	},"fast");
+		$("#css_progress").animate({
+			width: "70%",
+		}, "fast");
 
-	$("#css_progress").animate({
-		width:"70%",
-	},"fast");
+		$("#js_progress").animate({
+			width: "80%",
+		}, "fast");
 
-	$("#js_progress").animate({
-		width:"80%",
-	},"fast");
+		$("#jquery_progress").animate({
+			width: "70%",
+		}, "fast");
 
-	$("#jquery_progress").animate({
-		width:"50%",
-	},"fast");
+		$("#php_progress").animate({
+			width: "80%",
+		}, "fast");
 
-	$("#php_progress").animate({
-		width:"80%",
-	},"fast");
+		$("#cpp_progress").animate({
+			width: "60%",
+		}, "fast");
 
-	$("#cpp_progress").animate({
-		width:"60%",
-	},"fast");
-	$("#boot_progress").animate({
-		width:"74%",
-	},"fast");
-	$("#qt_progress").animate({
-		width:"60%",
-	},"fast");
+		$("#boot_progress").animate({
+			width: "70%",
+		}, "fast");
 
-	$("#ci_progress").animate({
-		width:"75%",
-	},"fast");
+		$("#qt_progress").animate({
+			width: "60%",
+		}, "fast");
 
-	$("#typescript_progress").animate({
-		width:"50%",
-	},"fast");
+		$("#ci_progress").animate({
+			width: "80%",
+		}, "fast");
 
-	$("#lara_progress").animate({
-		width:"80%",
-	},"fast");
+		$("#sql_progress").animate({
+			width: "75%",
+		}, "fast");
 
-	$("#ng_progress").animate({
-			width:"70%"
-	},"fast");
+		$("#typescript_progress").animate({
+			width: "50%",
+		}, "fast");
 
-	$("#mdl_progress").animate({
-			width:"50%"
-	},"fast");
+		$("#lara_progress").animate({
+			width: "80%",
+		}, "fast");
 
-	$("#ionic_progress").animate({
-			width:"60%"
-	},"fast");
+		$("#ng_progress").animate({
+			width: "70%"
+		}, "fast");
 
+		$("#mdl_progress").animate({
+			width: "50%"
+		}, "fast");
 
+		$("#ionic_progress").animate({
+			width: "60%"
+		}, "fast");
 
-});
+		$("#web_dev_progress").animate({
+			width: "80%"
+		}, "fast");
+
+		$("#ux_ui_progress").animate({
+			width: "70%"
+		}, "fast");
+
+		$("#database_progress").animate({
+			width: "80%"
+		}, "fast");
+	});
 </script>
