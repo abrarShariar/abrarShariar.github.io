@@ -3,5 +3,23 @@
 	font-weight: 900;
 }
 .ux #sub_head{
-	letter-spacing: 2px;
+	/* letter-spacing: 2px; */
+}
+
+/* for mobile screen less than 770px */
+@media screen and (max-width: 770px) {
+  .ux #sub_head {
+    font-size: 20px
+  }
+
+	#pro_pic {
+		height: 15%
+	}
+
+	.ux #myName {
+		font-size: 30px;
+	}
+	.menuBox{
+		margin-bottom: 30px;
+	}
 }

@@ -79,10 +79,10 @@
 			//click on tech icon
 
 			//click on hire icon
-			$("#contact_icon").click(function(){
-
-				$("#coming_soon").show("slow");
-			});
+			// $("#contact_icon").click(function(){
+			//
+			// 	$("#coming_soon").show("slow");
+			// });
 			//click on hire icon
 			// $("#chat_icon").click(function(){
 			// 	$("#nerd").animate({
